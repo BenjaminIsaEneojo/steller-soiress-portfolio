@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Soirées | Purple & Gold Luxury Event Planning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom purple + gold theme */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #C89B3C 0%, #F3D572 70%, #B8860B 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #C89B3C 0%, #B8860B 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(200, 155, 60, 0.4);
+        }
+        
+        .btn-outline-gold {
+            border: 1.5px solid #C89B3C;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-gold:hover {
+            background: rgba(200, 155, 60, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .luxury-card {
+            background: rgba(46, 18, 64, 0.7);
+            border: 1px solid rgba(200, 155, 60, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(2px);
+        }
+        
+        .luxury-card:hover {
+            border-color: rgba(200, 155, 60, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -12px rgba(74, 29, 109, 0.5);
+        }
+        
+        .gallery-card {
+            overflow: hidden;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -12px rgba(200, 155, 60, 0.3);
+        }
+        
+        .gallery-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .filter-active {
+            background: linear-gradient(135deg, #C89B3C 0%, #B8860B 100%);
+            color: black;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #1A0A2E;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2E1240;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C89B3C;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-white">
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 border-b border-purple-800/40 bg-[#1A0A2E]/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-semibold">
+            <span class="gold-gradient-text">Steller</span>
+            <span class="text-white"> Soiréss</span>
+        </a>
+        
+        <ul class="hidden md:flex gap-8 text-sm font-medium">
+            <li><a href="#home" class="hover:text-[#C89B3C] transition">Home</a></li>
+            <li><a href="#services" class="hover:text-[#C89B3C] transition">Services</a></li>
+            <li><a href="#gallery" class="hover:text-[#C89B3C] transition">Gallery</a></li>
+            <li><a href="#testimonials" class="hover:text-[#C89B3C] transition">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-[#C89B3C] transition">Contact</a></li>
+        </ul>
+        
+        <button class="btn-gold text-black px-5 py-2 rounded-lg font-semibold">
+            Book Now
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section with Background Image -->
+<section id="home" class="h-screen flex items-center justify-center text-center relative">
+    <!-- Hero Background Image -->
+    <div class="absolute inset-0 w-full h-full">
+        <img src="images/pexels-nojoum7-production-2157874475-35017880.jpg" 
+             alt="Luxury event planning hero" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#1A0A2E] via-[#2E1240]/70 to-[#4A1D6D]/40"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+        <span class="inline-block border border-[#C89B3C] px-5 py-2 text-xs uppercase tracking-wider rounded-full mb-4 text-[#C89B3C] bg-black/30 backdrop-blur-sm">
+            PREMIUM EVENT PLANNING
+        </span>
+        
+        <h1 class="text-5xl md:text-7xl font-light mt-6">
+            Creating <span class="gold-gradient-text">Unforgettable</span>
+            <span class="gold-gradient-text block mt-2">Moments</span>
+        </h1>
+        
+        <p class="text-gray-300 mt-6 text-lg max-w-2xl mx-auto">
+            Elevate your special occasions with our world-class event planning services. 
+            From intimate gatherings to grand celebrations, we bring your vision to life.
+        </p>
+        
+        <div class="mt-10 flex gap-5 justify-center flex-col sm:flex-row">
+            <button class="btn-gold text-black px-8 py-3 rounded-lg font-semibold">
+                Book Consultation
+            </button>
+            <button class="btn-outline-gold text-[#C89B3C] px-8 py-3 rounded-lg font-semibold">
+                Our Services
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section - All 8 Services -->
+<section id="services" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-[#C89B3C] uppercase text-sm tracking-wider">What We Offer</span>
+            <h2 class="text-4xl md:text-5xl font-light mt-3">Tailored <span class="gold-gradient-text">Services</span></h2>
+            <div class="w-24 h-0.5 bg-[#C89B3C] mx-auto mt-5"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-5">Comprehensive planning & coordination from concept to flawless execution.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Service 1: Event Planning -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Event Planning</h3>
+                <p class="text-gray-400 text-sm mt-2">Strategic vision, timelines & vendor management.</p>
+            </div>
+            
+            <!-- Service 2: Wedding Coordination -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Wedding Coordination</h3>
+                <p class="text-gray-400 text-sm mt-2">Romantic, bespoke weddings with attention to detail.</p>
+            </div>
+            
+            <!-- Service 3: Government Functions -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Government Functions</h3>
+                <p class="text-gray-400 text-sm mt-2">Official ceremonies with protocol precision.</p>
+            </div>
+            
+            <!-- Service 4: Corporate Events -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Corporate Events</h3>
+                <p class="text-gray-400 text-sm mt-2">Conferences, galas & product launches.</p>
+            </div>
+            
+            <!-- Service 5: Event Styling -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Event Styling</h3>
+                <p class="text-gray-400 text-sm mt-2">Curated aesthetics & luxury decor concepts.</p>
+            </div>
+            
+            <!-- Service 6: Event Management -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Event Management</h3>
+                <p class="text-gray-400 text-sm mt-2">End-to-end operations & on-site coordination.</p>
+            </div>
+            
+            <!-- Service 7: Protocol Services -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-4 0h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Protocol Services</h3>
+                <p class="text-gray-400 text-sm mt-2">VIP etiquette & diplomatic protocols.</p>
+            </div>
+            
+            <!-- Service 8: Consultation -->
+            <div class="luxury-card rounded-2xl p-6">
+                <div class="w-12 h-12 rounded-full bg-[#C89B3C]/20 flex items-center justify-center mb-5">
+                    <svg class="w-6 h-6 text-[#C89B3C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold">Consultation</h3>
+                <p class="text-gray-400 text-sm mt-2">Strategic planning & creative direction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section with Filtering -->
+<section id="gallery" class="py-24 px-6 bg-[#2E1240]/30">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-[#C89B3C] uppercase text-sm tracking-wider">Portfolio Highlights</span>
+            <h2 class="text-4xl md:text-5xl font-light mt-3">Our <span class="gold-gradient-text">Recent Events</span></h2>
+            <div class="w-24 h-0.5 bg-[#C89B3C] mx-auto mt-5"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-5">A glimpse into the memorable events we've brought to life with precision and elegance.</p>
+        </div>
+        
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <button class="filter-btn active bg-[#C89B3C] text-black px-6 py-2 rounded-full text-sm font-semibold transition" data-filter="all">All Events</button>
+            <button class="filter-btn border border-[#C89B3C] text-[#C89B3C] hover:bg-[#C89B3C]/10 px-6 py-2 rounded-full text-sm font-semibold transition" data-filter="wedding">Weddings</button>
+            <button class="filter-btn border border-[#C89B3C] text-[#C89B3C] hover:bg-[#C89B3C]/10 px-6 py-2 rounded-full text-sm font-semibold transition" data-filter="corporate">Corporate</button>
+            <button class="filter-btn border border-[#C89B3C] text-[#C89B3C] hover:bg-[#C89B3C]/10 px-6 py-2 rounded-full text-sm font-semibold transition" data-filter="private">Private Parties</button>
+            <button class="filter-btn border border-[#C89B3C] text-[#C89B3C] hover:bg-[#C89B3C]/10 px-6 py-2 rounded-full text-sm font-semibold transition" data-filter="social">Social Events</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+            <!-- Wedding 1 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="wedding">
+                <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Luxury Wedding" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Timeless Elegance Wedding</h3>
+                        <span class="text-[#C89B3C] text-xs">Wedding</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Grand ballroom with 250 guests • Full floral design</p>
+                </div>
+            </div>
+            
+            <!-- Corporate 1 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="corporate">
+                <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Gala" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Tech Leaders Summit</h3>
+                        <span class="text-[#C89B3C] text-xs">Corporate</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Award night & networking gala for 500+ executives</p>
+                </div>
+            </div>
+            
+            <!-- Private Party 1 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="private">
+                <img src="images/pexels-jdgromov-4717526.jpg" alt="Private Party" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Midnight Garden Soirée</h3>
+                        <span class="text-[#C89B3C] text-xs">Private</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Intimate 80 guests • Outdoor garden setting</p>
+                </div>
+            </div>
+            
+            <!-- Social Event 1 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="social">
+                <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Charity Gala" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Art Gala for Foundation</h3>
+                        <span class="text-[#C89B3C] text-xs">Social</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Charity auction & celebration with 300 attendees</p>
+                </div>
+            </div>
+            
+            <!-- Wedding 2 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="wedding">
+                <img src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Beach Wedding" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Coastal Vows Ceremony</h3>
+                        <span class="text-[#C89B3C] text-xs">Wedding</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Destination wedding • Beachfront sunset</p>
+                </div>
+            </div>
+            
+            <!-- Corporate 2 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="corporate">
+                <img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product Launch" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Luxury Brand Launch</h3>
+                        <span class="text-[#C89B3C] text-xs">Corporate</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Exclusive preview gala with VIP guests</p>
+                </div>
+            </div>
+            
+            <!-- Private Party 2 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="private">
+                <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Birthday Celebration" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Milestone Birthday Gala</h3>
+                        <span class="text-[#C89B3C] text-xs">Private</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">150 guests • Live entertainment & premium dining</p>
+                </div>
+            </div>
+            
+            <!-- Social Event 2 -->
+            <div class="gallery-card bg-[#2E1240] rounded-xl overflow-hidden" data-category="social">
+                <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Networking Event" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold text-lg">Women in Leadership</h3>
+                        <span class="text-[#C89B3C] text-xs">Social</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Networking reception with keynote speakers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-24 px-6 bg-[#1A0A2E] relative overflow-hidden">
+    <!-- Background decorative elements -->
+    <div class="absolute top-0 left-0 w-64 h-64 bg-[#C89B3C]/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#4A1D6D]/20 rounded-full blur-3xl"></div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-16">
+            <span class="text-[#C89B3C] uppercase text-sm tracking-wider">Testimonials</span>
+            <h2 class="text-4xl md:text-5xl font-light mt-3">What Our <span class="gold-gradient-text">Clients Say</span></h2>
+            <div class="w-24 h-0.5 bg-[#C89B3C] mx-auto mt-5"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-5">Don't just take our word for it — hear from those who've experienced the Stellar touch.</p>
+        </div>
+        
+        <!-- Testimonials Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Testimonial 1 - Wedding Client -->
+            <div class="luxury-card rounded-2xl p-8 relative group">
+                <!-- Quote icon -->
+                <div class="absolute top-6 right-6 opacity-20">
+                    <svg class="w-12 h-12 text-[#C89B3C]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                </div>
+                
+                <!-- Stars -->
+                <div class="flex gap-1 mb-6">
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    "Stellar Soirées turned our dream wedding into a reality. Every detail was perfect, from the floral arrangements to the timeline coordination. Our guests are still talking about it months later!"
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#C89B3C] to-[#B8860B] flex items-center justify-center text-black font-bold text-lg">
+                        S
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Sarah & Michael Idowu</h4>
+                        <p class="text-gray-500 text-sm">Wedding, December 2024</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 - Corporate Client -->
+            <div class="luxury-card rounded-2xl p-8 relative group">
+                <div class="absolute top-6 right-6 opacity-20">
+                    <svg class="w-12 h-12 text-[#C89B3C]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                </div>
+                
+                <div class="flex gap-1 mb-6">
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    "The corporate gala they organized for our company was flawless. From venue selection to AV production, everything exceeded our expectations. Our CEO was thoroughly impressed!"
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#C89B3C] to-[#B8860B] flex items-center justify-center text-black font-bold text-lg">
+                        J
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">James Ademu</h4>
+                        <p class="text-gray-500 text-sm">VP of Operations, TechCorp</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 - Private Party Client -->
+            <div class="luxury-card rounded-2xl p-8 relative group">
+                <div class="absolute top-6 right-6 opacity-20">
+                    <svg class="w-12 h-12 text-[#C89B3C]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                </div>
+                
+                <div class="flex gap-1 mb-6">
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-5 h-5 text-[#C89B3C] fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    "My 40th birthday party was absolutely magical! The Stellar team transformed our backyard into a stunning garden paradise. Every guest felt like royalty. Worth every penny!"
+                </p>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#C89B3C] to-[#B8860B] flex items-center justify-center text-black font-bold text-lg">
+                        E
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-white">Okoncy Thompson</h4>
+                        <p class="text-gray-500 text-sm">Private Celebration, March 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional: Add a "More Testimonials" button -->
+        <div class="text-center mt-12">
+            <button class="btn-outline-gold text-[#C89B3C] px-8 py-3 rounded-lg font-semibold transition">
+                Read More Success Stories
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 px-6 bg-gradient-to-b from-[#1A0A2E] to-[#0D0418]">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-light">Let's Create <span class="gold-gradient-text">Your Masterpiece</span></h2>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Ready to transform your vision into an unforgettable event? Reach out to our team for a complimentary consultation.</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-5 justify-center">
+            <button class="btn-gold text-black px-8 py-3 rounded-lg font-semibold">
+                Request a Proposal
+            </button>
+            <button class="btn-outline-gold text-[#C89B3C] px-8 py-3 rounded-lg font-semibold">
+                Call +234 80 5697 8900
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#0D0418] border-t border-purple-800/40 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">
+                    <span class="gold-gradient-text">Stellar</span>
+                    <span class="text-white"> Soirées</span>
+                </h3>
+                <p class="text-gray-400 text-sm">Creating unforgettable moments through exceptional planning and flawless execution.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-[#C89B3C]">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#home" class="hover:text-[#C89B3C] transition">Home</a></li>
+                    <li><a href="#services" class="hover:text-[#C89B3C] transition">Services</a></li>
+                    <li><a href="#gallery" class="hover:text-[#C89B3C] transition">Gallery</a></li>
+                    <li><a href="#testimonials" class="hover:text-[#C89B3C] transition">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:text-[#C89B3C] transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-[#C89B3C]">Services</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>Event Planning</li>
+                    <li>Wedding Coordination</li>
+                    <li>Corporate Events</li>
+                    <li>Protocol Services</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-[#C89B3C]">Contact Info</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li>📍 Lokoja, Kogi State, Nigeria </li>
+                    <li>📞 +234 80 5697 8900 </li>
+                    <li>✉️ salamat4jibrin39@gmail.com </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-purple-800/40 pt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Stellar Soirées. All rights reserved. Where moments become legacy.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    
+    // Gallery Filter Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => {
+                btn.classList.remove('bg-[#C89B3C]', 'text-black');
+                btn.classList.add('border', 'border-[#C89B3C]', 'text-[#C89B3C]');
+            });
+            // Add active class to clicked button
+            button.classList.remove('border', 'border-[#C89B3C]', 'text-[#C89B3C]');
+            button.classList.add('bg-[#C89B3C]', 'text-black');
+            
+            const filterValue = button.getAttribute('data-filter');
+            
+            galleryItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 10);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+    
+    // Navbar background change on scroll
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-[#1A0A2E]/95');
+        } else {
+            nav.classList.remove('bg-[#1A0A2E]/95');
+        }
+    });
+</script>
+
+</body>
+</html>
