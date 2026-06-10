@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Steller Events — Lokoja's Premier Event Planners</title>
+    <meta name="description" content="Meet the team behind Steller Events. Learn our story, our values, and the passionate people who turn ordinary occasions into extraordinary memories in Lokoja, Kogi State.">
+    <meta name="keywords" content="Steller Events team, event planner Lokoja, about Steller Events, steller_events Instagram, luxury events Kogi State">
+    <link rel="canonical" href="https://benjaminisaeneojo.github.io/steller-soiress-portfolio/about.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep:   #200E3A;
+            --bg-mid:    #3B1F6E;
+            --bg-light:  #4A2882;
+            --bg-pale:   #5C3499;
+            --gold:      #D4A843;
+            --gold-lt:   #E8C06A;
+            --gold-dk:   #A07828;
+            --text-main: #F5F0FF;
+            --text-muted:#C9BCEC;
+            --card-bg:   rgba(74, 40, 130, 0.65);
+            --card-border: rgba(212,168,67,0.20);
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-deep); color: var(--text-main); }
+        .font-display { font-family: 'Cormorant Garamond', serif; }
+        .gold-text {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-lt) 60%, var(--gold-dk) 100%);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+        }
+        .btn-gold { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dk) 100%); transition: all .3s; }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(212,168,67,.4); }
+        .btn-outline-gold { border:1.5px solid var(--gold); color:var(--gold); transition: all .3s; }
+        .btn-outline-gold:hover { background:rgba(212,168,67,.1); transform:translateY(-2px); }
+        .luxury-card { background:var(--card-bg); border:1px solid var(--card-border); backdrop-filter:blur(4px); transition:all .3s; }
+        .luxury-card:hover { border-color:rgba(212,168,67,.5); transform:translateY(-5px); box-shadow:0 20px 40px -12px rgba(32,14,58,.55); }
+        nav { background:rgba(32,14,58,.88); backdrop-filter:blur(14px); }
+        .gold-divider { width:56px; height:2px; background:var(--gold); margin-top:1rem; }
+        ::-webkit-scrollbar { width:7px; }
+        ::-webkit-scrollbar-track { background:var(--bg-mid); }
+        ::-webkit-scrollbar-thumb { background:var(--gold); border-radius:10px; }
+        .wa-fab { position:fixed; bottom:28px; right:28px; z-index:999; width:56px; height:56px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 20px rgba(37,211,102,.45); transition:transform .2s; }
+        .wa-fab:hover { transform:scale(1.1); }
+        .reveal { opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease; }
+        .reveal.visible { opacity:1; transform:translateY(0); }
+        #mobile-menu { display:none; }
+        #mobile-menu.open { display:flex; }
+
+        /* article pullquote */
+        .pullquote {
+            border-left: 3px solid var(--gold);
+            padding: 1rem 1.5rem;
+            background: rgba(212,168,67,.06);
+            border-radius: 0 .5rem .5rem 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-style: italic;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* team card */
+        .team-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            transition: all .3s;
+        }
+        .team-card:hover { border-color: rgba(212,168,67,.5); transform: translateY(-5px); }
+        .team-card img { width:100%; height:260px; object-fit:cover; object-position:top; }
+
+        /* value pill */
+        .value-pill {
+            display:inline-flex; align-items:center; gap:.5rem;
+            background: rgba(212,168,67,.08);
+            border:1px solid rgba(212,168,67,.2);
+            border-radius:2rem;
+            padding: .5rem 1rem;
+            font-size:.8rem;
+            color: var(--text-main);
+        }
+
+        /* stat */
+        .stat-num { font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:300; line-height:1; }
+    </style>
+</head>
+<body>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/2348056978900?text=Hello%20Steller%20Events%2C%20I%27d%20like%20to%20discuss%20an%20event."
+   target="_blank" class="wa-fab" aria-label="WhatsApp Steller Events">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 border-b border-[rgba(212,168,67,0.15)]">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-semibold tracking-wide">
+            <span class="gold-text font-display text-2xl">STELLER</span>
+            <span class="text-white font-light"> EVENTS</span>
+        </a>
+        <ul class="hidden md:flex gap-8 text-sm font-medium text-[var(--text-muted)]">
+            <li><a href="index.html#home"         class="hover:text-[var(--gold)] transition">Home</a></li>
+            <li><a href="index.html#services"     class="hover:text-[var(--gold)] transition">Services</a></li>
+            <li><a href="index.html#gallery"      class="hover:text-[var(--gold)] transition">Gallery</a></li>
+            <li><a href="index.html#testimonials" class="hover:text-[var(--gold)] transition">Testimonials</a></li>
+            <li><a href="about.html"              class="text-[var(--gold)]">About Us</a></li>
+            <li><a href="index.html#contact"      class="hover:text-[var(--gold)] transition">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+            <a href="index.html#contact" class="btn-gold text-black px-5 py-2 rounded-lg font-semibold text-sm hidden md:block">Book Now</a>
+            <button id="nav-toggle" class="md:hidden text-white p-1" aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="flex-col bg-[var(--bg-mid)] border-t border-[var(--card-border)] px-6 py-4 gap-4 text-sm font-medium">
+        <a href="index.html"              class="hover:text-[var(--gold)] py-1 block">Home</a>
+        <a href="index.html#services"     class="hover:text-[var(--gold)] py-1 block">Services</a>
+        <a href="index.html#gallery"      class="hover:text-[var(--gold)] py-1 block">Gallery</a>
+        <a href="index.html#testimonials" class="hover:text-[var(--gold)] py-1 block">Testimonials</a>
+        <a href="about.html"              class="text-[var(--gold)] py-1 block">About Us</a>
+        <a href="index.html#contact"      class="hover:text-[var(--gold)] py-1 block">Contact</a>
+    </div>
+</nav>
+
+<!-- ═══════════════════ HERO BANNER ═══════════════════ -->
+<section class="relative pt-32 pb-20 px-6 overflow-hidden">
+    <div class="absolute inset-0">
+        <img src="images/pexels-nojoum7-production-2157874475-35017879.jpg"
+             alt="Steller Events at work" class="w-full h-full object-cover">
+        <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(32,14,58,.75) 0%, var(--bg-deep) 100%)"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <span class="inline-block border border-[var(--gold)] px-4 py-1.5 text-xs uppercase tracking-[.25em] rounded-full text-[var(--gold)] bg-black/20 mb-5 reveal">
+            Our Story
+        </span>
+        <h1 class="font-display text-5xl md:text-6xl font-light leading-tight reveal" style="transition-delay:.1s">
+            Behind Every Perfect Event<br>Is a <em class="gold-text">Passionate Team</em>
+        </h1>
+        <p class="text-[var(--text-muted)] mt-5 max-w-2xl mx-auto reveal" style="transition-delay:.2s">
+            We are Steller Events — Lokoja's most trusted luxury event planning company. 
+            This is who we are, what we believe, and why we do what we do.
+        </p>
+    </div>
+</section>
+
+<!-- ═══════════════════ STATS BAR ═══════════════════ -->
+<section style="background:var(--bg-mid); border-top:1px solid var(--card-border); border-bottom:1px solid var(--card-border);" class="py-10 px-6">
+    <div class="max-w-4xl mx-auto grid grid-cols-3 gap-6 text-center reveal">
+        <div>
+            <div class="stat-num gold-text">150+</div>
+            <p class="text-[var(--text-muted)] text-xs mt-1 uppercase tracking-wider">Events Delivered</p>
+        </div>
+        <div>
+            <div class="stat-num gold-text">5+</div>
+            <p class="text-[var(--text-muted)] text-xs mt-1 uppercase tracking-wider">Years of Excellence</p>
+        </div>
+        <div>
+            <div class="stat-num gold-text">98%</div>
+            <p class="text-[var(--text-muted)] text-xs mt-1 uppercase tracking-wider">Client Satisfaction</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ STORY ARTICLE ═══════════════════ -->
+<section class="py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+
+        <div class="mb-10 reveal">
+            <span class="text-[var(--gold)] text-xs uppercase tracking-[.25em]">Our Beginning</span>
+            <h2 class="font-display text-4xl font-light mt-2 text-white">How Steller Events Was Born</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="space-y-6 text-[var(--text-muted)] leading-relaxed reveal">
+            <p>
+                Steller Events was founded on a simple but powerful belief: that every occasion — no matter the scale — 
+                deserves to be extraordinary. What began as a passion for beautiful gatherings in Lokoja has grown into 
+                one of Kogi State's most recognised names in luxury event planning.
+            </p>
+
+            <div class="pullquote reveal">
+                "We don't just plan events. We engineer moments that people carry in their hearts for the rest of their lives."
+            </div>
+
+            <p>
+                Our founder saw a gap in the market — clients who had big dreams for their celebrations but lacked a 
+                trusted partner who could translate vision into reality with precision, elegance, and zero stress. 
+                That's exactly the gap Steller Events was built to fill.
+            </p>
+
+            <p>
+                From intimate birthday soirées to large-scale government ceremonies at the State House, we have built 
+                a reputation for showing up prepared, staying calm under pressure, and delivering results that exceed 
+                expectations every single time.
+            </p>
+        </div>
+
+        <div class="my-12 grid grid-cols-2 gap-4 reveal">
+            <img src="images/wedding-steller.JPG" alt="Steller Events wedding" class="rounded-xl w-full h-52 object-cover">
+            <img src="images/stellarevent-green-governmenthouse.JPG" alt="Government event by Steller Events" class="rounded-xl w-full h-52 object-cover">
+        </div>
+
+        <div class="mb-8 reveal">
+            <span class="text-[var(--gold)] text-xs uppercase tracking-[.25em]">What Drives Us</span>
+            <h2 class="font-display text-4xl font-light mt-2 text-white">Our Values</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 mb-10 reveal">
+            <div class="value-pill">✨ <span><strong class="text-white">Excellence First</strong> — Good enough never is</span></div>
+            <div class="value-pill">🤝 <span><strong class="text-white">Client-Centred</strong> — Your vision leads everything</span></div>
+            <div class="value-pill">🎯 <span><strong class="text-white">Precision</strong> — Every detail is intentional</span></div>
+            <div class="value-pill">💛 <span><strong class="text-white">Integrity</strong> — We deliver what we promise</span></div>
+            <div class="value-pill">🌱 <span><strong class="text-white">Creativity</strong> — Every event is truly unique</span></div>
+            <div class="value-pill">🏆 <span><strong class="text-white">Legacy</strong> — Memories that outlast the day</span></div>
+        </div>
+
+        <div class="space-y-5 text-[var(--text-muted)] leading-relaxed reveal">
+            <p>
+                We believe that the best events aren't just beautiful — they're deeply personal. That's why our 
+                process always begins with listening: understanding who you are, who your guests are, and what kind 
+                of story you want to tell through your event.
+            </p>
+            <p>
+                Whether we're dressing a ballroom in florals, coordinating a state-level ceremony, or styling 
+                an intimate garden party, the same standard of care applies. No shortcuts. No compromise on quality. 
+                Just beautifully executed moments, every time.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════ TEAM SECTION ═══════════════════ -->
+<section style="background:var(--bg-mid);" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-14 reveal">
+            <span class="text-[var(--gold)] text-xs uppercase tracking-[.25em]">The People Behind the Magic</span>
+            <h2 class="font-display text-4xl md:text-5xl font-light mt-3 text-white">Meet Our <span class="gold-text">Team</span></h2>
+            <div class="gold-divider mx-auto"></div>
+            <p class="text-[var(--text-muted)] max-w-2xl mx-auto mt-5 text-sm">
+                A passionate group of creatives, coordinators, and detail-obsessed professionals — united by one goal: your perfect event.
+            </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Lead Planner (use team photo) -->
+            <div class="team-card reveal">
+                <img src="images/team-steller.JPG" alt="Steller Events Lead Team">
+                <div class="p-6">
+                    <h3 class="font-display text-2xl font-light text-white">Salamat Jibrin</h3>
+                    <p class="text-[var(--gold)] text-xs uppercase tracking-wider mt-1 mb-3">Founder & Lead Planner</p>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">
+                        With over five years of experience turning dreams into reality, Salamat leads every project with 
+                        grace, precision, and an eye for detail that sets Steller Events apart.
+                    </p>
+                    <div class="flex gap-2 mt-4">
+                        <a href="https://www.instagram.com/steller_events" target="_blank" 
+                           class="text-xs text-[var(--gold)] hover:underline">@steller_events</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Coordinator -->
+            <div class="team-card reveal" style="transition-delay:.1s">
+                <img src="images/pexels-hussein-altameemi-782843-8468732.jpg" alt="Event coordinator" class="w-full h-64 object-cover object-top">
+                <div class="p-6">
+                    <h3 class="font-display text-2xl font-light text-white">Events Coordination Team</h3>
+                    <p class="text-[var(--gold)] text-xs uppercase tracking-wider mt-1 mb-3">Day-of Coordination</p>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">
+                        Our on-ground coordination team ensures every timeline, vendor, and guest movement runs like 
+                        clockwork — invisible work that makes the event feel effortless.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Styling Team -->
+            <div class="team-card reveal" style="transition-delay:.2s">
+                <img src="images/pexels-jdgromov-4717526.jpg" alt="Styling team" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="font-display text-2xl font-light text-white">Creative Styling Team</h3>
+                    <p class="text-[var(--gold)] text-xs uppercase tracking-wider mt-1 mb-3">Florals & Décor</p>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">
+                        From tablescapes to full venue transformations, our styling team brings artistry and craftsmanship 
+                        to every visual detail of your event.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12 reveal">
+            <p class="text-[var(--text-muted)] text-sm mb-5">Want to work with us or join our team?</p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="https://wa.me/2348056978900?text=Hello%20Steller%20Events%2C%20I'd%20like%20to%20discuss%20working%20together."
+                   target="_blank" class="btn-gold text-black px-7 py-3 rounded-lg font-semibold text-sm">
+                    Get In Touch
+                </a>
+                <a href="https://www.instagram.com/steller_events" target="_blank"
+                   class="btn-outline-gold px-7 py-3 rounded-lg font-semibold text-sm">
+                    Follow on Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════ PROCESS SECTION ═══════════════════ -->
+<section class="py-20 px-6" style="background:var(--bg-deep)">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14 reveal">
+            <span class="text-[var(--gold)] text-xs uppercase tracking-[.25em]">How We Work</span>
+            <h2 class="font-display text-4xl font-light mt-3 text-white">Our <span class="gold-text">Process</span></h2>
+            <div class="gold-divider mx-auto"></div>
+        </div>
+
+        <div class="space-y-6 reveal">
+            <div class="luxury-card rounded-xl p-6 flex gap-5 items-start">
+                <div class="w-10 h-10 rounded-full border border-[var(--gold)] flex items-center justify-center text-[var(--gold)] font-display text-lg font-light shrink-0">1</div>
+                <div>
+                    <h4 class="font-semibold text-white mb-1">Discovery Call</h4>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">We start by listening. We learn about you, your event, your guests, your taste, and your budget — with zero judgment and full attention.</p>
+                </div>
+            </div>
+            <div class="luxury-card rounded-xl p-6 flex gap-5 items-start">
+                <div class="w-10 h-10 rounded-full border border-[var(--gold)] flex items-center justify-center text-[var(--gold)] font-display text-lg font-light shrink-0">2</div>
+                <div>
+                    <h4 class="font-semibold text-white mb-1">Custom Proposal</h4>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">We put together a tailored proposal covering concept, timeline, vendor recommendations, and investment — all crafted specifically for your event.</p>
+                </div>
+            </div>
+            <div class="luxury-card rounded-xl p-6 flex gap-5 items-start">
+                <div class="w-10 h-10 rounded-full border border-[var(--gold)] flex items-center justify-center text-[var(--gold)] font-display text-lg font-light shrink-0">3</div>
+                <div>
+                    <h4 class="font-semibold text-white mb-1">Planning & Coordination</h4>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">We handle vendor sourcing, styling, logistics, and every detail in between — keeping you updated while taking the stress completely off your plate.</p>
+                </div>
+            </div>
+            <div class="luxury-card rounded-xl p-6 flex gap-5 items-start">
+                <div class="w-10 h-10 rounded-full border border-[var(--gold)] flex items-center justify-center text-[var(--gold)] font-display text-lg font-light shrink-0">4</div>
+                <div>
+                    <h4 class="font-semibold text-white mb-1">Your Perfect Day</h4>
+                    <p class="text-[var(--text-muted)] text-sm leading-relaxed">On the day, our team is fully present — quietly managing every moving part so you can be in the moment, fully present for the people you love.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12 reveal">
+            <a href="index.html#contact">
+                <button class="btn-gold text-black px-10 py-4 rounded-xl font-semibold">Start Your Journey With Us ✨</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background:#150828; border-top:1px solid rgba(212,168,67,.12);" class="py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="font-display text-xl font-semibold mb-3">
+                    <span class="gold-text">Steller</span><span class="text-white"> Events</span>
+                </h3>
+                <p class="text-[var(--text-muted)] text-sm leading-relaxed">Creating unforgettable moments through exceptional planning and flawless execution.</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://www.instagram.com/steller_events" target="_blank" class="w-9 h-9 rounded-full border border-[var(--card-border)] flex items-center justify-center text-[var(--text-muted)] hover:border-[var(--gold)] hover:text-[var(--gold)] transition text-sm">IG</a>
+                    <a href="https://wa.me/2348056978900" target="_blank" class="w-9 h-9 rounded-full border border-[var(--card-border)] flex items-center justify-center text-[var(--text-muted)] hover:border-green-400 hover:text-green-400 transition text-xs">WA</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-[var(--gold)] text-sm">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-[var(--text-muted)]">
+                    <li><a href="index.html"              class="hover:text-[var(--gold)] transition">Home</a></li>
+                    <li><a href="index.html#services"     class="hover:text-[var(--gold)] transition">Services</a></li>
+                    <li><a href="index.html#gallery"      class="hover:text-[var(--gold)] transition">Gallery</a></li>
+                    <li><a href="about.html"              class="text-[var(--gold)]">About Us</a></li>
+                    <li><a href="index.html#contact"      class="hover:text-[var(--gold)] transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-[var(--gold)] text-sm">Services</h4>
+                <ul class="space-y-2 text-sm text-[var(--text-muted)]">
+                    <li>Wedding Planning</li>
+                    <li>Corporate Events</li>
+                    <li>Government Functions</li>
+                    <li>Private Celebrations</li>
+                    <li>Luxury Styling</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-4 text-[var(--gold)] text-sm">Contact</h4>
+                <ul class="space-y-2 text-sm text-[var(--text-muted)]">
+                    <li>📍 Lokoja, Kogi State, Nigeria</li>
+                    <li>📞 +234 805 697 8900</li>
+                    <li>✉️ salamat4jibrin39@gmail.com</li>
+                    <li>📸 @steller_events</li>
+                </ul>
+            </div>
+        </div>
+        <div style="border-top:1px solid rgba(212,168,67,.1);" class="pt-8 text-center text-[var(--text-muted)] text-xs">
+            <p>© 2025 Steller Events. All rights reserved. · Where moments become legacy.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById('nav-toggle').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('open');
+});
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
